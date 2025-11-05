@@ -1,0 +1,53 @@
+body{
+  font-family:"Times New Roman"
+}
+
+#navbar{
+  position:fixed;
+  left:0;
+  background-image:url(https://images.pexels.com/photos/1883386/pexels-photo-1883386.jpeg?_gl=1*1md7qis*_ga*MTIyOTQ5MDE3OS4xNzYwMzcyNzMx*_ga_8JE65Q40S6*czE3NjE1ODA3NjQkbzYkZzEkdDE3NjE1ODEyMjgkajQyJGwwJGgw);
+height:100%;
+background-size:cover;
+padding-top:0;
+}
+
+#navbar a {
+  display:block;
+  color:black;
+  font-size:18px;
+  padding:10px;
+      text-decoration:none;
+
+
+}
+#navbar a:hover{
+  color:red;
+}
+#main-doc{
+  margin-left:300px;
+}
+header{
+  font-weight:bolder;
+  font-size:20px;
+  padding-bottom:20px;
+  padding-top:20px;
+  color:red;
+}
+p{
+  font-size:16px;
+  padding-bottom:2px;
+}
+code{
+  background:black;
+  color:white;
+}
+.reference-link{
+  color:red;
+}
+
+@media (max-width: 600px){
+ code{
+   background:blue;
+ }
+
+  }

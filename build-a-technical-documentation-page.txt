@@ -1,0 +1,201 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <title>A short introduction to SQL</title>
+  </head>
+  <body>
+    <main id="main-doc">
+      <nav id="navbar"">
+        <header>A short introduction to SQL</header>
+        <a class="nav-link" href="#What_is_SQL?">What is SQL?</a>
+        <a class="nav-link" href="#SQL_Syntax">SQL Syntax</a>
+        <a class="nav-link" href="#SQL_Select_Statemant">SQL Select Statemant</a>
+        <a class="nav-link"href="#SQL_Where_Clause"> SQL Where Clause</a>
+        <a class="nav-link" href="#SQL_Order_By"> SQL Order By</a>
+        <a class="nav-link" href="#The_Most_Important_SQL_Commands"> The Most Important SQL Commands</a>
+         <a class="nav-link" href="#Reference"> Reference</a>
+
+
+
+
+
+      </nav>
+
+
+
+
+
+
+
+
+
+      <section id="What_is_SQL?" class="main-section">
+        <header>
+          What is SQL?
+        </header>
+        <p>SQL stands for Structured Query Language, and it is used for accessing and manipulating databases. </p>
+        <p>It can:</p>
+        <ul>
+          <li>execute queries against a database</li>
+          <li>retrieve data from a database</li>
+          <li>insert records in a database</li>
+          <li>update records in a database</li>
+          <li>delete records from a database</li>
+          <li>create new databases</li>
+          <li>create new tables in a database</li>
+          <li>create stored procedures in a database</li>
+          <li>create views in a database</li>
+          <li>set permissions on tables, procedures, and views</li>
+          
+        </ul>
+      </section>
+      <section id="SQL_Syntax" class="main-section">
+        <header>
+          SQL Syntax
+        </header>
+        <p>SQL statements consist of keywords.</p>
+        <p>For example, the following statement returns all records that are stored in a table called Customers:</p>
+        <code>SELECT * FROM Customers;</code>
+      </section>
+      <section id="SQL_Select_Statemant" class="main-section">
+        <header>
+          SQL Select Statemant
+        </header>
+        <p>This statement is used to select data from tables.</p>
+        <p>Its syntax is:</p>
+        <code>SELECT column1, column2, ...<br>
+FROM table_name
+</code>
+<p>For example this statement returns the data stored in columns CustomerName and City from a database Customers:</p>
+<code>SELECT CustomerName, City FROM Customers;</code>
+      </sectiion>
+      <section id="SQL_Where_Clause" class="main-section">
+        <header>
+          SQL Where Clause
+        </header>
+        <p>This statement is used to return only those records that fulfill a specific condition.</p>
+        <p>Its syntax is:</p>
+        <code>SELECT column1, column2, ...<br>
+FROM table_name<br>
+WHERE condition;
+</code>
+<p>For example this statement selects all customers that are from Mexico.
+</p>
+<code>SELECT * FROM Customers<br>
+WHERE Country='Mexico';
+</code>
+      </section>
+      <section id="SQL_Order_By" class="main-section">
+        <header>
+          SQL Order By
+        </header>
+        <p>The ORDER BY keyword is used to sort the result set in ascending or descending order</p>
+        <p>Its syntax is:</p>
+        <code>SELECT column1, column2, ...<br>
+FROM table_name<br>
+ORDER BY column1, column2, ... ASC|DESC;
+</code>
+<p>For example the following SQL statement is used to sort the products by price.</p>
+<code>SELECT * FROM Products<br>
+ORDER BY Price;
+</code>
+<p>Whereas, this one sorts the products by ProductName in reverse order:</p>
+<code>SELECT * FROM Products<br>
+ORDER BY ProductName DESC;
+</code>
+      </section>
+       <section id="The_Most_Important_SQL_Commands" class="main-section">
+        <header>
+          The Most Important SQL Commands
+        </header>
+        <p>Here is a list of some of the most important SQL statements.</p>
+        <ul>
+          <li><strong>SELECT</strong> - extracts data from a database</li>
+            <li><strong>UPDATE</strong> - updates data in a database</li>
+            <li><strong>DELETE</strong> - deletes data from a database</li>
+            <li><strong>INSERT INTO</strong> - inserts new data into a database</li>
+            <li><strong>CREATE DATABASE</strong> - creates a new database</li>
+            <li><strong>ALTER DATABASE</strong> - modifies a database</li>
+            <li><strong>CREATE TABLE</strong> - creates a new table</li>
+            <li><strong>ALTER TABLE</strong> - modifies a table</li>
+            <li><strong>DROP TABLE</strong> - deletes a table</li>
+            <li><strong>CREATE INDEX</strong> - creates an index (search key)</li>
+            <li><strong>DROP INDEX</strong> - deletes an index</li>
+            
+        </ul>
+      </section>
+      <section id="Reference" class="main-section">
+        <header>
+          Reference
+        </header>
+        <p>All the documentation in this page is taken from <a class="reference-link" href="https://www.w3schools.com/sql/default.asp">w3schools.com</a></p>
+      </section>
+    </main>
+  </body>
+  
+  </html>
+
+** end of index.html **
+
+** start of styles.css **
+
+
+body{
+  font-family:"Times New Roman"
+}
+
+#navbar{
+  position:fixed;
+  left:0;
+  background-image:url(https://images.pexels.com/photos/1883386/pexels-photo-1883386.jpeg?_gl=1*1md7qis*_ga*MTIyOTQ5MDE3OS4xNzYwMzcyNzMx*_ga_8JE65Q40S6*czE3NjE1ODA3NjQkbzYkZzEkdDE3NjE1ODEyMjgkajQyJGwwJGgw);
+height:100%;
+background-size:cover;
+padding-top:0;
+}
+
+#navbar a {
+  display:block;
+  color:black;
+  font-size:18px;
+  padding:10px;
+      text-decoration:none;
+
+
+}
+#navbar a:hover{
+  color:red;
+}
+#main-doc{
+  margin-left:300px;
+}
+header{
+  font-weight:bolder;
+  font-size:20px;
+  padding-bottom:20px;
+  padding-top:20px;
+  color:red;
+}
+p{
+  font-size:16px;
+  padding-bottom:2px;
+}
+code{
+  background:black;
+  color:white;
+}
+.reference-link{
+  color:red;
+}
+
+@media (max-width: 600px){
+ code{
+   background:blue;
+ }
+
+  }
+
+** end of styles.css **
+
